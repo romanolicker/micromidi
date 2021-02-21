@@ -18,7 +18,6 @@ module MicroMIDI
 
       @state = State.new(inputs, outputs)
       @controller_instance = controller_instance
-      djfakldsjf
 
       @instructions = {
         :process => Instructions::Process.new(@state),

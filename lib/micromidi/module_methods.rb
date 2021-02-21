@@ -9,7 +9,9 @@ module MicroMIDI
   def new(*args, &block)
     inputs = Device.get_inputs(args)
     outputs = Device.get_outputs(args)
-    Context.new(inputs, outputs, &block)
+    controller = args.last
+
+    Context.new(inputs, outputs, controller, &block)
   end
 
   class << self

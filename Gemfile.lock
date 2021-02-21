@@ -1,0 +1,45 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    alsa-rawmidi (0.3.2)
+      ffi (~> 1.0)
+    ffi (1.14.2)
+    ffi-coremidi (0.4.1)
+      ffi (~> 1.9, >= 1.9.6)
+    midi-eye (0.3.10)
+      midi-message (~> 0.4, >= 0.4.4)
+      midi-nibbler (~> 0.2, >= 0.2.2)
+      unimidi (~> 0.4, >= 0.4.6)
+    midi-fx (0.4.2)
+      midi-message (~> 0.4, >= 0.4.4)
+    midi-jruby (0.1.6)
+    midi-message (0.4.9)
+    midi-nibbler (0.2.4)
+      midi-message (~> 0.4, >= 0.4.4)
+    midi-winmm (0.1.10)
+      ffi (>= 1.0)
+    minitest (5.14.3)
+    mocha (1.12.0)
+    rake (10.5.0)
+    shoulda-context (1.2.2)
+    unimidi (0.4.8)
+      alsa-rawmidi (~> 0.3, >= 0.3.1)
+      ffi-coremidi (~> 0.3, >= 0.3.5)
+      midi-jruby (~> 0.1, >= 0.1.4)
+      midi-winmm (~> 0.1, >= 0.1.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  midi-eye (~> 0.3, >= 0.3.7)
+  midi-fx (~> 0.4, >= 0.4)
+  midi-message (~> 0.4, >= 0.4.4)
+  minitest (~> 5.5, >= 5.5.0)
+  mocha (~> 1.1, >= 1.1.0)
+  rake (~> 10.4, >= 10.4.2)
+  shoulda-context (~> 1.2, >= 1.2.1)
+  unimidi (~> 0.4, >= 0.4.6)
+
+BUNDLED WITH
+   2.1.4
