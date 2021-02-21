@@ -7,15 +7,18 @@ module MicroMIDI
     extend Forwardable
 
     attr_reader :state
+    attr_reader :controller_instance
 
     def_delegator :state, :output_cache, :cache
 
     # @param [Array<UniMIDI::Input>, UniMIDI::Input] inputs
     # @param [Array<UniMIDI::Output, IO>, IO, UniMIDI::Output] outputs
     # @param [Proc] block
-    def initialize(inputs, outputs, &block)
+    def initialize(inputs, outputs, controller_instance, &block)
 
       @state = State.new(inputs, outputs)
+      @controller_instance = controller_instance
+      djfakldsjf
 
       @instructions = {
         :process => Instructions::Process.new(@state),
